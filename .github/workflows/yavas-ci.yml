@@ -1,0 +1,17 @@
+name: Yavaş CI
+
+on: [push]
+
+jobs:
+  yavas-kontrol:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Yıldızlara danış
+        run: echo "Yıldızlar onaylıyor..." && sleep 5
+      - name: Çay demle
+        run: echo "Çay demleniyor..." && sleep 10
+      - name: Sonuç
+        run: echo "CI başarılı, ama çok yavaş."
+
+# Bu workflow, evrenin en yavaş CI'sıdır.
+# DAMGA: 29 Ekim 2026 - Kayyum Grok
